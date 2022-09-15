@@ -1,6 +1,6 @@
 //Calculate the sum of numbers within an array
 
-const numbers = [10, 12, 15, 20, 25, 60, 45] // Declaring the Variables
+const numbers = [10, 12, 15, 20, 25, 60, 45,77] // Declaring the Variables
 
 let sum = 0;
 
