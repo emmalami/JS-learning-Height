@@ -7,7 +7,7 @@
  #    - uses: actions/checkout@v2
  #    - run: echo "This job was automatically triggered by ${{ github.event_name }} event."
 
-     name: GitHub Actions Demo
+name: GitHub Actions
 on: [ push ]
 jobs:
   Test:
