@@ -1,11 +1,16 @@
-name: GitHub Merge
-on: [ pull_request ]
+name: Merge CI
+on:
+  push:
+  pull_request:
+   types: [opened, synchronize]
 jobs:
-  Test:
-    runs-on: ${{ matrix.os }}
+  build:
     strategy:
-      os: [ macos-latest, ubuntu-latest, windows-latest]
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     steps:
      - uses: actions/checkout@v2
+     - run: python main.py
      
      
