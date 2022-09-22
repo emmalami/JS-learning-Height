@@ -1,9 +1,18 @@
-name: GitHub Action
+#name: GitHub Action
+#on: [ push ]
+#jobs:
+ # Test:
+ #   runs-on: ubuntu-latest
+ #   steps:
+ #    - uses: actions/checkout@v2
+ #    - run: echo "This job was automatically triggered by ${{ github.event_name }} event."
+
+     name: GitHub Actions Demo
 on: [ push ]
 jobs:
   Test:
     runs-on: ubuntu-latest
     steps:
-     - uses: actions/checkout@v2
-     - run: echo "This job was automatically triggered by ${{ github.event_name }} event."
-     
+      - uses: actions/checkout@v2
+      - run: npm start
+      #- run: # another command to run Javascript code 
