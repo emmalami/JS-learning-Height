@@ -1,6 +1,6 @@
 //Calculate the sum of numbers within an array
 
-const numbers = [10, 12, 15, 20, 25, 30] // Declaring the Variables
+const numbers = [10, 12, 15, 20, 25, 60, 45,77] // Declaring the Variables
 
 let sum = 0;
 
@@ -8,5 +8,4 @@ for (let i = 0; i<numbers.length; i++) { //initializing the start point and loop
   sum += numbers[i]; // Summing all the numbers
 }
 
-console.log(sum); //display the output
-
+console.log(sum); //display the output on the terminal
